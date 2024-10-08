@@ -12,22 +12,28 @@
 </head>
 
 <body>
+  <style>
+    .etsy-logo {
+        color: #f1641e;
+    }
+</style>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <h1><a class="navbar-brand" href="index.html">Etsy</a></h1>
+        <div class="container d-flex justify-content-between">
+          <h1 ><a class="nav-link etsy-logo " href="index.html">Etsy</a></h1>
           
           <!-- Categories Dropdown -->
-          <p><i class="fa fa-bars mt-3 ml-9 ms-10"></i> Categories</p>
+          <p class="d-none d-lg-block"><i class="fa fa-bars mt-3 ml-9 ms-10"></i> Categories</p>
       
           <!-- Search Bar -->
-          <form class="d-flex" style="flex-grow: 1;">
+          <form class="d-flex d-none d-lg-flex" style="flex-grow: 0.6;">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button class="btn etsy-logo" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            
           </form>
       
           <!-- Optional right-side links or buttons -->
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto d-none d-lg-flex">
             <li class="nav-item">
               <a class="nav-link" href="#">Sign In</a>
             </li>
@@ -38,46 +44,73 @@
               <a class="nav-link" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Cart</a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
             </li>
           </ul>
         </div>
       </nav>
-      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-lg-block">
+        <div class="container-fluid justify-content-center">
+          
+          <ul class="navbar-nav ml-500 align-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-gift" aria-hidden="true"></i> Gift mode</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Back-to-School savings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home Favorites</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fashion Finds</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
     <!-- Main Content: Product Details -->
     <div class="container mt-5">
         <div class="row">
             <!-- Product Image and Thumbnails -->
             <div class="col-lg-6">
-                <img src="https://via.placeholder.com/500" class="img-fluid" alt="Main Product Image">
+                <img src="assets/pic8.png" class="img-fluid" alt="Main Product Image">
                 <div class="d-flex mt-3">
-                    <img src="https://via.placeholder.com/100" class="img-thumbnail me-2" alt="Thumbnail 1">
-                    <img src="https://via.placeholder.com/100" class="img-thumbnail me-2" alt="Thumbnail 2">
-                    <img src="https://via.placeholder.com/100" class="img-thumbnail me-2" alt="Thumbnail 3">
+                    <img src="assets/pic9.png" class="img-thumbnail me-2" alt="Thumbnail 1">
+                    <img src="assets/pic10.png" class="img-thumbnail me-2" alt="Thumbnail 2">
+                    <img src="assets/pic11.png" class="img-thumbnail me-2" alt="Thumbnail 3">
+                    <img src="assets/pic12.png" class="img-thumbnail me-2" alt="Thumbnail 3">
+                    <img src="assets/pic13.png" class="img-thumbnail me-2" alt="Thumbnail 3">
+                    <img src="assets/pic14.png" class="img-thumbnail me-2" alt="Thumbnail 3">
+                    <img src="assets/pic15.png" class="img-thumbnail me-2" alt="Thumbnail 3">
+                    <img src="assets/pic16.png" class="img-thumbnail me-2" alt="Thumbnail 3">
                 </div>
             </div>
 
             <!-- Product Details -->
             <div class="col-lg-6">
-                <h1 class="display-6">Soccer Ball Necklace</h1>
-                <p class="text-muted">by DreamBeadsDovi</p>
-                <h3 class="text-success">$50.79</h3>
-
+                <p class="text-danger">Rare find</p>
+                <h3 class="text-dark">USD 50.79</h3>
+                <p class="text-muted">Local Tax included(where applicable)</p>
+                <p class="">Soccer Ball Necklace Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vel, quos placeat quisquam beatae necessitatibus facere libero a, in magni, culpa excepturi officiis et.</p>
+                <p class="text-muted">by DreamBeadsDovi ★★★★★</p>
+                <p class="text-muted">&check; Return and exchanges accepted</p>
                 <!-- Add to Cart Button -->
                 <button class="btn btn-dark btn-lg w-100 mb-3"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
 
                 <!-- Item Details -->
                 <h5>Item Details</h5>
-                <ul>
-                    <li>Made by DreamBeadsDovi</li>
-                    <li>Materials: Glass</li>
-                    <li>Necklace Length: 42cm</li>
-                </ul>
+                <h6>Highlights</h6>
+               
+                <p><i class="fa-solid fa-hand"></i> Made by DreamBeadsDovi</p>
+                <p><i class="fa-solid fa-star"></i> Materials: Glass</p>
+                <p><i class="fa-solid fa-ruler"></i> Necklace Length: 42cm</p>
+                <p><i class="fa-solid fa-link"></i> Chain Style: Bead</p>
+
 
                 <!-- Reviews -->
-                <h5 class="mt-4">Customer Reviews</h5>
-                <p>★★★★★ - "This necklace is perfect!"</p>
+                <h5 class="mt-4">About item</h5>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti soluta quia quasi, quibusdam cum pariatur placeat autem molestias corrupti sint aspernatur ex, ipsa sequi quidem odit perferendis tenetur! Eaque corrupti maxime nisi optio, aliquam, veniam sit dolor nemo corporis exercitationem quibusdam excepturi quo quam minus id perferendis veritatis est cupiditate. Ab vero maxime eligendi et ipsam animi libero dicta minus.</p>
             </div>
         </div>
     </div>

@@ -12,22 +12,32 @@
 </head>
 
 <body>
+    <style>
+    .etsy-logo {
+        color: #f1641e;
+    }
+    .card {
+        border: none !important; 
+        box-shadow: none !important; 
+    }
+</style>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <h1><a class="navbar-brand" href="index.html">Etsy</a></h1>
+        <div class="container d-flex justify-content-between">
+          <h1 ><a class="nav-link etsy-logo " href="index.html">Etsy</a></h1>
           
           <!-- Categories Dropdown -->
-          <p><i class="fa fa-bars mt-3 ml-9 ms-10"></i> Categories</p>
+          <p class="d-none d-lg-block"><i class="fa fa-bars mt-3 ml-9 ms-10"></i> Categories</p>
       
           <!-- Search Bar -->
-          <form class="d-flex" style="flex-grow: 1;">
+          <form class="d-flex d-none d-lg-flex" style="flex-grow: 0.6;">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button class="btn etsy-logo" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            
           </form>
       
           <!-- Optional right-side links or buttons -->
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto d-none d-lg-flex">
             <li class="nav-item">
               <a class="nav-link" href="#">Sign In</a>
             </li>
@@ -38,7 +48,26 @@
               <a class="nav-link" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Cart</a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-lg-block">
+        <div class="container-fluid justify-content-center">
+          
+          <ul class="navbar-nav ml-500 align-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-gift" aria-hidden="true"></i> Gift mode</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Back-to-School savings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home Favorites</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fashion Finds</a>
             </li>
           </ul>
         </div>
@@ -46,69 +75,126 @@
 
     <!-- Main Content: Product Grid -->
     <div class="container mt-5">
-        <h2 class="text-center mb-4">Soccer Products</h2>
         <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-1">
+                <img src="assets/pic1.png" alt="image">
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-1">
+                <p><a href="#" class="text-muted">efratul</a> ★★★★★(224)</p>
+                <h3>Football Field Pencil case, Soccer Field Zipper Pouch, Kid's Pencil Case, Back to School, Sport Lover Gift, Student Gift Idea, Gift for Kids</h3>
+                <h4>USD 19.00</h4>
+                <span class="badge rounded-pill bg-success">FREE Shipping</span><br>
+                <button href="details.html" class="badge rounded-pill bg-light text-dark btn-lg h-25 w-25 w-sm-50 mb-5 mt-3">Shop this item</button>
+            </div>
+        </div>
+        <hr>
+        <div class= "row align-right d-lg-flex d-none justify-content-between mb-3">
+            <div class="col-2">
+                <button class="badge rounded-pill text-dark"><i class="fa-solid fa-sliders"></i> All Filters</button>
+            </div>
+            <div class="col-4">
+                365 results, with ads? <button class="badge rounded-pill text-dark">sort by: most relevant <i class="fa-solid fa-caret-down"></i></button>
+            </div>
+            
+           
+        
+        </div>
+        <button class="badge rounded-pill bg-light text-dark d-lg-flex d-none">Etsy's pick  <i class="fa-solid fa-x"></i></button>
+        <div class="row d-lg-flex d-none justify-content-between mt-3">
+            <div class="col-2">
+                <p>Etsy's pick</p>
+            </div>
+            <div class="col-1">
+                <button class="badge rounded-pill bg-light text-dark">See More</button>
+            </div>
+        </div>
+        <div class="row justify-content-start">
             <!-- Product Card -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/200" class="card-img-top" alt="Product Image">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Football Pencil Case</h5>
-                        <p class="card-text">$19.00</p>
-                        
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <a href="details.html" class="nav-link">
+                    <div class="card h-100">
+                        <img src="assets/pic2.png" class="card-img-top" alt="Product Image">
+                        <div class="card-body text-nowrap" style="overflow: hidden;">
+                            <p class="card-title">personalized Soccer Ball Not...</p>
+                            <p class="text-muted">★★★★★(20.1k)</p>
+                            <p class="card-text">USD 18.00</p>
+                            <p class="text-muted" >DesigningMoment</p>
+                        </div>
                     </div>
+                </a>
                 </div>
-            </div>
-
-            <!-- Additional Product Cards (Repeat this for more products) -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/200" class="card-img-top" alt="Product Image">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Soccer Ball Headband</h5>
-                        <p class="card-text">$18.00</p>
-                        
+             <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <a href="details.html" class="nav-link">
+                    <div class="card h-100">
+                        <img src="assets/pic3.png" class="card-img-top" alt="Product Image">
+                        <div class="card-body text-nowrap" style="overflow: hidden;">
+                            <p class="card-title">Soccer Ball Headband</p>
+                            <p class="text-muted">★★★★★(327)</p>
+                            <p class="card-text">USD 18.00</p>
+                            <p class="text-muted" >GorunUS</p>
+                        </div>
                     </div>
+                </a>
                 </div>
-            </div>
-
-            <!-- Additional Product Cards (Repeat this for more products) -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/200" class="card-img-top" alt="Product Image">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Soccer Ball Headband</h5>
-                        <p class="card-text">$18.00</p>
-                        
+             <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <a href="details.html" class="nav-link">
+                    <div class="card h-100">
+                        <img src="assets/pic4.png" class="card-img-top" alt="Product Image">
+                        <div class="card-body text-nowrap" style="overflow: hidden;">
+                            <p class="card-title">Soccer Ball Necklace-Football</p>
+                            <p class="text-muted">★★★★★(31)</p>
+                            <p class="card-text">USD 50.79</p>
+                            <p class="text-muted" >DreamBeadsDovi</p>
+                        </div>
                     </div>
+                </a>
                 </div>
-            </div>
-
-            <!-- Additional Product Cards (Repeat this for more products) -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/200" class="card-img-top" alt="Product Image">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Soccer Ball Headband</h5>
-                        <p class="card-text">$18.00</p>
-                        
+             <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <a href="details.html" class="nav-link">
+                    <div class="card h-100">
+                        <img src="assets/pic5.png" class="card-img-top" alt="Product Image">
+                        <div class="card-body text-nowrap" style="overflow: hidden;">
+                            <p class="card-title">Women's personalized Football...</p>
+                            <p class="text-muted">★★★★★(301)</p>
+                            <p class="card-text">USD 13.27</p>
+                            <p class="text-success"><s>USD 17.69</s> (25% off)</p>
+                            <p class="text-muted" >Theartiscmonkeyuk</p>
+                        </div>
                     </div>
+                </a>
                 </div>
-            </div>
-
-            <!-- Additional Product Cards (Repeat this for more products) -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/200" class="card-img-top" alt="Product Image">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Soccer Ball Headband</h5>
-                        <p class="card-text">$18.00</p>
-                        
+             <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <a href="details.html" class="nav-link">
+                    <div class="card h-100">
+                        <img src="assets/pic6.png" class="card-img-top" alt="Product Image">
+                        <div class="card-body text-nowrap" style="overflow: hidden;">
+                            <p class="card-title">Goal print green, Soccer Kit</p>
+                            <p class="text-muted">★★★★★(1.2k)</p>
+                            <p class="card-text">USD 13.33</p>
+                            <p class="text-muted">Kidsofthevilage</p>
+                        </div>
                     </div>
+                </a>
                 </div>
-            </div>
-
-            <!-- Repeat for more products... -->
+             <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <a href="details.html" class="nav-link">
+                    <div class="card h-100 ">
+                        <img src="assets/pic7.png" class="card-img-top" alt="Product Image">
+                        <div class="card-body text-nowrap" style="overflow: hidden;">
+                            <p class="card-title" style="text-overflow: ellipsis;">personalized Football Cuffin...</p>
+                            <p class="text-muted">★★★★★(2.1k)</p>
+                            <p class="card-text">USD 37.52</p>
+                            <p class="text-muted">CarriageTradeCompany</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            
+            
+            
+            
+            
+            
         </div>
     </div>
 
